@@ -1,0 +1,7 @@
+FROM nginx
+
+CMD ["apt-get","update"]
+CMD ["apt-get","install","-y","less"]
+
+CMD ["cp", "nginx.conf" "/etc/nginx/nginx.conf"]
+CMD ['/bin/true']

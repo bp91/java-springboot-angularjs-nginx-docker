@@ -1,0 +1,14 @@
+services:
+  nginx:
+    container_name: nginx1
+    image: nginx:1.13
+    restart: always
+    ports: ["80:80", "443:443"]
+    volumes: ['./nginx/conf.d:/etc/nginx/conf.d']
+  testwebapp:
+    image: testwebapp
+    working_dir: /testwebapp
+    depends_on: [nginx]
+    expose: ["8080"]
+    restart: always
+version: '2'

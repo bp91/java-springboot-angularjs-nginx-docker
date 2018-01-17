@@ -1,0 +1,5 @@
+/home/bruno/workspace/testWebapp/src/main/java/it/testWebapp/config/JerseyConfig.java
+/home/bruno/workspace/testWebapp/src/main/java/it/testWebapp/ApplicationTestWebapp.java
+/home/bruno/workspace/testWebapp/src/main/java/it/testWebapp/guicontroller/MainController.java
+/home/bruno/workspace/testWebapp/src/main/java/it/testWebapp/service/UserService.java
+/home/bruno/workspace/testWebapp/src/main/java/it/testWebapp/endpoint/UserEndPoint.java
