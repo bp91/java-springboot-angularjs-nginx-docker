@@ -8,10 +8,10 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: [
-					'src/main/resources/static/js/*.js',
-					'src/main/resources/static/js/angularjs/controller/*.js'
+					'src/main/webapp/js/*.js',
+					'src/main/webapp/js/angularjs/controller/*.js'
 				],
-				dest: 'src/main/resources/static/applicationScripts.js'
+				dest: 'src/main/webapp/js/applicationScripts.js'
 			}
 		},
 		uglify: {
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'src/main/resources/static/applicationScripts.min.js': [ 'src/main/resources/static/applicationScripts.js' ]
+					'src/main/webapp/js/applicationScripts.min.js': [ 'src/main/webapp/js/applicationScripts.js' ]
 				}
 			}
 		},
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 					optimization: 2
 				},
 				files: {
-					'src/main/resources/static/css/theme.css': 'src/main/resources/static/css/less/theme.less'
+					'src/main/webapp/css/theme.css': 'src/main/webapp/css/less/theme.less'
 				}
 			}
 		},
@@ -41,19 +41,29 @@ module.exports = function (grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: 'src/main/resources/templates/html/',
+						cwd: 'src/main/webapp/html/',
 						src: ['**'],
-						dest: 'src/main/resources/static/templates/'
+						dest: 'src/main/resources/templates/'
 					}
 				]
 			},
-			html_index: {
+			css: {
 				files: [
 					{
 						expand: true,
-						cwd: 'src/main/resources/templates',
-						src: ['*.html'],
-						dest: 'src/main/resources/static/templates/'
+						cwd: 'src/main/webapp/css/',
+						src: ['**'],
+						dest: 'src/main/resources/static/css/'
+					}
+				]
+			},
+			js: {
+				files: [
+					{
+						expand: true,
+						cwd: 'src/main/webapp/js/',
+						src: ['**'],
+						dest: 'src/main/resources/static/js/'
 					}
 				]
 			}
@@ -61,7 +71,7 @@ module.exports = function (grunt) {
 		watch: {
 			less: {
 				files: [
-					'src/main/resources/static/css/less/*.less'
+					'src/main/webapp/css/less/*.less'
 				],
 				tasks: [ 'less:all' ],
 				options: {
@@ -69,16 +79,12 @@ module.exports = function (grunt) {
 				}
 			},
 			js: {
-				files: ['src/main/resources/static/js/**/*.js'],
+				files: ['src/main/webapp/js/**/*.js'],
 				tasks: ['concat', 'uglify']
 			},
 			html: {
-				files: ['src/main/resources/templates/html/*.html'],
+				files: ['src/main/webapp/html/*.html'],
 				tasks: ['copy:html']
-			},
-			html_index: {
-				files: ['src/main/resources/templates/*.html'],
-				tasks: ['copy:html_index']
 			}
 		}
 	});

@@ -4,7 +4,7 @@ var testWebapp = angular.module('testWebapp', [
 
 testWebapp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/home', {
-		templateUrl: 'templates/home.html',
+		templateUrl: 'templates/components/home.html',
 		controller: 'HomeCtrl'
 	}).otherwise({
 		redirectTo: '/home'

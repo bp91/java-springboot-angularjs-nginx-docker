@@ -1,18 +1,18 @@
 services:
-  
   nginx:
     image: nginx:1.13
     restart: always
-    ports: 
-    	- "80:80"
-    volumes: ['./nginx/conf.d:/etc/nginx/conf.d']
+    ports:
+        - '80:80'
+    volumes: 
+        - './nginx/conf.d:/etc/nginx/conf.d'
   
   testwebapp:
     build: testwebapp
     container_name: testwebapp
     depends_on: 
         - nginx
-    expose: 
-        - "8080"
+    ports: 
+        - '8080:8080'
     restart: always
 version: '2'

@@ -7,7 +7,6 @@
     <artifactId>testWebapp</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
-
     <name>testWebapp</name>
     <description>Test web application</description>
 
