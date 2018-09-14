@@ -3,12 +3,13 @@ services:
   nginx:
     image: nginx:1.13
     restart: always
-    ports: ["80:80", "443:443"]
+    ports: 
+    	- "80:80"
     volumes: ['./nginx/conf.d:/etc/nginx/conf.d']
   
   testwebapp:
     build: testwebapp
-    working_dir: /testwebapp
+    container_name: testwebapp
     depends_on: 
         - nginx
     expose: 

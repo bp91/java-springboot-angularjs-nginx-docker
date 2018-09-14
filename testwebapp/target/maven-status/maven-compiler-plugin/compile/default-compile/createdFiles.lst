@@ -1,5 +1,7 @@
+it/testWebapp/endpoint/config/CORSResponseFilter.class
 it/testWebapp/ApplicationTestWebapp.class
 it/testWebapp/config/JerseyConfig.class
-it/testWebapp/guicontroller/MainController.class
 it/testWebapp/service/UserService.class
 it/testWebapp/endpoint/UserEndPoint.class
+it/testWebapp/controllers/TestController.class
+it/testWebapp/controllers/guiController/MainController.class

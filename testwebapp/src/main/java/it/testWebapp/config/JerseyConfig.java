@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
+    	packages("it.testWebapp.endpoint.config");
         packages("it.testWebapp.endpoint");
         register(MultiPartFeature.class);
     }
