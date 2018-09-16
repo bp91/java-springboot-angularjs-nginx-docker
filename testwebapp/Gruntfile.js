@@ -8,8 +8,8 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: [
-					'src/main/webapp/js/*.js',
-					'src/main/webapp/js/angularjs/controller/*.js'
+					'src/main/webapp/js/app/*.js',
+					'src/main/webapp/js/app/angularjs/controller/*.js'
 				],
 				dest: 'src/main/webapp/js/applicationScripts.js'
 			}
