@@ -1,7 +1,0 @@
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/controllers/guiController/MainController.java
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/service/UserService.java
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/config/JerseyConfig.java
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/endpoint/config/CORSResponseFilter.java
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/ApplicationTestWebapp.java
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/controllers/TestController.java
-/Users/brunopistone/Developer/java-springboot-angularjs-nginx-docker/testwebapp/src/main/java/it/testWebapp/endpoint/UserEndPoint.java

@@ -16,9 +16,9 @@ services:
         volumes: 
             - "./nginx/conf.d:/etc/nginx/conf.d"
 
-    testwebapp:
-        build: testwebapp
-        container_name: testwebapp
+    testwebapp_mvn:
+        build: testwebapp_mvn
+        container_name: testwebapp_mvn
         environment:
             - CATALINA_OPTS=-Xmx12g -Xms12g -XX:MaxPermSize=4096m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -XX:+UseConcMarkSweepGC
             - JVM_OPTS=-Xmx12g -Xms12g -XX:MaxPermSize=4096m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -XX:+UseConcMarkSweepGC
